@@ -1,2 +1,2 @@
-# EliasHar-demo
+# EliasHar
 VEFÞ1 vefþróun
