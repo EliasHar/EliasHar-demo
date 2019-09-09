@@ -24,6 +24,8 @@ div {
 	flex-flow: column-reverse;
 }
 .box {
+	font-size: 1.2em;
+	height: 5em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -40,8 +42,3 @@ div {
 .blar {
 	background-color: cyan; 
 }
-.box {
-	font-size: 1.2em;
-	height: 5em;
-}
-
