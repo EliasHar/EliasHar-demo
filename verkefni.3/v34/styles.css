@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box /* padding og border gildi leggjast inní heildarbreidd * allra taga */
+}
+body {
+    max-width: 60em; /* 960px - 1080px - tölvuskjár */
+    margin: auto;
+    font-family: 'PT Serif', serif;
+}
+/* -- GRID AREA -- */
+.body {
+    grid-area: body;
+}
+.haus {
+    grid-area: haus;
+    text-align: center;
+}
+.topnav {
+    grid-area: topnav;
+}
+.content {
+    grid-area: content;
+}.foot {
+    grid-area: foot;
+}
+/*-- dálkar í main --*/
+.as1 {
+    grid-area: as1;
+    border-right: 2px solid darkgray;
+}
+.as2 {
+    grid-area: as2;
+}
+.art1 {
+    grid-area: art1;
+    border-right: 2px solid darkgray;
+}
+/*-- template area --*/
+.body {
+    display: grid;
+
+    grid-template-areas:
+        "topnav"    
+        "haus"
+        "content"
+        "foot"
+}
+.main {
+    display: grid; /* grid virkar á barn ekki barnabarn*/
+    grid-template-areas:
+        "art1 as1 as2";
+    grid-template-columns: 3fr 2fr 2fr;
+    background-color: lightgray;
+}
+/*-- top menu --*/
+.topmenu li, .footmenu li {
+    list-style-type: none;
+}
+.topmenu , .footmenu {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 1em 0; /* top+bottom 1em / L&R 0 */
+    background-color: darkgray;
+}
+ .art1, .as1, .as2 {
+    padding: 1em;
+}
+h1, h2, h3 {
+    color: rgb(201, 0, 0);
+}
+
+
+
+
