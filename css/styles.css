@@ -1,0 +1,95 @@
+* { box-sizing: border-box }
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0; /* tek út sjálgefið 10px margin */
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font: 400 1em/1.5 sans-serif; /* samsett skipun: weight/height, size, family */
+    background: linear-gradient(blue,black);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1 {
+    font-weight: 300;
+    font-size: 2.5em;
+}
+.container {
+    max-width: 60em; /*960px = fartölvur*/
+    margin: 0 auto; /* top+bottom og left+right */
+    padding: 0;
+}
+.topbutt {
+    display: block;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    text-decoration: none;
+    border-radius: 100%;
+    padding: 0 .4em;
+    font-size: 2em;
+    border: 2px solid;
+    color: blue;
+    background-color: oldlace;
+}
+.bgcolor {
+    background-image: linear-gradient(navajowhite,oldlace);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 1em;
+}
+.headcolor, .footcolor{
+    color: white;
+}
+.topnav a, .footnav a{
+    color: white;
+    text-decoration: none;
+}
+.copy {
+    color: white;
+    text-align: center;
+}
+blockquote {
+    background-color: rgba(255,255,255,.3);
+    padding: 1em;
+}
+/* grid */
+.col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.col-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.col-4 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.gap-4 {
+    grid-gap: 4em
+}
+.innermenu {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+.innermenu a {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    padding: .5em;
+    border-right: 1px solid white;
+}
+.innermenu a:hover, .innermenu a:active{
+    color: blue;
+    background-color: white;
+}
+.innermenu a:last-child{
+    border: 0;
+}
+.vheight {
+    
+}
