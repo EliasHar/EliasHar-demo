@@ -8,12 +8,12 @@ body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font: 400 1em/1.5 sans-serif; /* samsett skipun: weight/height, size, family */
-    background-color: black;
+    background: #03438a;
+
 }
 h1 {
     font-weight: 300;
     font-size: 2.5em;
-    color: gold;
 }
 .container {
     max-width: 60em; /*960px = fartölvur*/
@@ -30,7 +30,7 @@ h1 {
     padding: 0 .4em;
     font-size: 2em;
     border: 2px solid;
-    color: blue;
+    color: #03438a;
     background-color: oldlace;
 }
 .bgcolor {
@@ -70,23 +70,31 @@ blockquote {
 .gap-4 {
     grid-gap: 4em
 }
+.pad-4 {
+    padding-top: 3em;
+}
 .innermenu {
     display: flex;
     flex-flow: row;
     justify-content: center;
 }
 .innermenu a {
-    background-color: blue;
+    background-color: #03438a;
     color: white;
     text-decoration: none;
     padding: .5em;
     border-right: 1px solid white;
 }
 .innermenu a:hover, .innermenu a:active{
-    color: blue;
+    color: #03438a;
     background-color: white;
 }
 .innermenu a:last-child{
     border: 0;
 }
-
+.verkefni, .topnav{
+    text-align: right;
+}
+li a{
+    color: lightblue;
+}
