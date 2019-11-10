@@ -8,12 +8,12 @@ body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font: 400 1em/1.5 sans-serif; /* samsett skipun: weight/height, size, family */
-    background-color: black;
+    background-color:#4557FF;
 }
 h1 {
     font-weight: 300;
     font-size: 2.5em;
-    color: gold;
+    color: black;
 }
 .container {
     max-width: 60em; /*960px = fartölvur*/
@@ -31,12 +31,10 @@ h1 {
     font-size: 2em;
     border: 2px solid;
     color: blue;
-    background-color: oldlace;
+
 }
 .bgcolor {
-    background-image: linear-gradient(navajowhite,oldlace);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #2EACFF;
     padding: 1em;
 }
 .headcolor, .footcolor{
@@ -55,6 +53,23 @@ blockquote {
     padding: 1em;
 }
 /* grid */
+.nav1 {
+    grid-area: nav1;
+}
+.nav2 {
+    grid-area: nav2;
+}
+.nav3 {
+    grid-area: nav3;
+}
+.nav4 {
+    grid-area: nav4;
+}
+.container-col {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1em;
+}
 .col-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -67,6 +82,9 @@ blockquote {
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
+.grid-container {
+    display: grid;
+}
 .gap-4 {
     grid-gap: 4em
 }
@@ -76,17 +94,24 @@ blockquote {
     justify-content: center;
 }
 .innermenu a {
-    background-color: blue;
-    color: white;
+    background-color: white;
+    color: black;
     text-decoration: none;
     padding: .5em;
-    border-right: 1px solid white;
+    border-right: 1px solid black;
 }
 .innermenu a:hover, .innermenu a:active{
-    color: blue;
-    background-color: white;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-right: 1px solid black;
 }
 .innermenu a:last-child{
     border: 0;
 }
-
+.topnav {
+    text-align: right;
+}
+audio {
+    width: 100%;
+}
