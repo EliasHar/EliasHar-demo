@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box /* padding og border gildi leggjast inní heildarbreidd * allra taga */
+}
+body {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: #BEA1BE;
+}
+/* -- GRID AREA -- */
+.body {
+    grid-area: body;
+}
+.haus {
+    grid-area: haus;
+    text-align: center;
+    background-color: #AC86E8;
+}
+.topnav {
+    grid-area: topnav;
+}
+.main {
+    grid-area: main;
+}.foot {
+    grid-area: foot;
+}
+/*-- dálkar í main --*/
+.as1 {
+    grid-area: as1;
+    background-color: rgb(235, 149, 134);
+}
+.as2 {
+    grid-area: as2;
+    background-color: rgb(166, 236, 199)
+}
+.art1 {
+    grid-area: art1;
+    background-color: rgb(94, 197, 255)
+}
+/*-- template area --*/
+.body {
+    display: grid;
+    grid-template-areas:
+        "topnav"    
+        "haus"
+        "main"
+        "foot"
+}
+.main {
+    margin: auto;
+    display: grid; /* grid virkar á barn ekki barnabarn*/
+    grid-template-areas:
+        "art1 as1 as2";
+    grid-template-columns: 3fr 1fr 1fr;
+}
+/*-- top menu --*/
+.topmenu li, .footmenu li {
+    list-style-type: none;
+}
+.topmenu , .footmenu {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 1em 0; /* top+bottom 1em / L&R 0 */
+    background-color: #BEA1BE;
+}
+.foot {
+    bottom: 0;
+}
+ .art1, .as1, .as2 {
+    padding: 2em;
+}
+p, h1, h2, h3, blockquote{
+    color: white;
+}
+
+
+
